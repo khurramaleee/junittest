@@ -46,33 +46,24 @@ public class functionsss implements interfacee {
             }
 
 
-            /* arr.length returns the number of elements
-             * present in the array
-             */
+
             double average = total / arr.length;
 
-            /* This is used for displaying the formatted output
-             * if you give %.4f then the output would have 4 digits
-             * after decimal point.
-             */
+
 
             return (int) average;
         }
     public boolean isPalindrome(String str) {
 
-        // Pointers pointing to the beginning
-        // and the end of the string
         int i = 0, j = str.length() - 1;
 
-        // While there are characters toc compare
+
         while (i < j) {
 
-            // If there is a mismatch
+
             if (str.charAt(i) != str.charAt(j))
                 return false;
 
-            // Increment first pointer and
-            // decrement the other
             i++;
             j--;
         }
